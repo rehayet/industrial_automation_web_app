@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Automation</title>
+    <link rel="stylesheet" href="{% static 'css/alom.css' %}">
+
+</head>
+
+
+<body>
+    
+    
+    <a id="top"></a>
+
+    
+    <div class="Mainbox">
+        
+        <div class="form1">
+            <form action="{% url 'block' %}" method="post">
+                {% csrf_token %}
+                <input type="number" name="number_input" id="number_input" placeholder="Enter a number">
+                <button type="submit">Submit</button>
+            </form>  
+        </div>
+        <div class="check_counter_container">
+            <div class="counter">
+                {% for position in positions %}
+                <div class="count"><h3 style="color: #fff;">{{ position }}</h3></div>
+                {% endfor %}
+            </div>
+            <div class="check_counter">
+        {% if context %}
+
+        
+        <form action="{% url 're' %}" method="post">
+           {% csrf_token %}
+            
+
+<button class="form2" type="submit">Download as TXT</button>
+             
+           <h1 style="color: #fff;">Total: {{ total }}</h1>
+
+
+        {% for i in context %}
+        
+            <div id="each-{{ i }}" class="twocheck">
+                
+                {% if not forloop.counter|divisibleby:2 %}
+                
+                
+
+
+                <div>
+                <label class="custom_check">
+                    <input type="checkbox" name="checkbox" value="O">
+                    <input type="hidden" name="checkbox" value="X">
+                    <span class="checkmark"></span>
+                </label>
+                </div>
+                <div>
+                <label class="custom_check">
+                    <input type="checkbox" name="checkbox" value="O"> 
+                    <input type="hidden" name="checkbox" value="X">
+                    <span class="checkmark"></span>
+                </label>
+                </div>
+                
+                {% endif %}
+                
+            </div>
+            <br>
+            
+        {% endfor %}
+        <button class="form2" type="submit">Download as TXT</button>
+
+        </form>
+        {% else %}
+        {% endif %}
+      </div>
+    </div>
+
+
+        
+        <div class="back-btn">
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+        </div>
+    </div>
+
+    
+    <div class="search-container">
+        <input type="number" id="searchInput" placeholder="Search...">
+    </div>
+    <script src="{% static 'js/alom.js' %}"></script>
+
+    
+</body>
+</html>
