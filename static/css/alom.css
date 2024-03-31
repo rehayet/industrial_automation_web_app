@@ -1,3 +1,6 @@
+/* Developed by Rehayet Hossen Shakil 
+    https://www.linkedin.com/in/rehayet-hossen-shakil */
+
 .Mainbox{
     display: flex;
     min-height: 300px;
@@ -96,6 +99,8 @@ display: none;
 display: block;
 }
 
+/* Developed by Rehayet Hossen Shakil 
+    https://www.linkedin.com/in/rehayet-hossen-shakil */
 
 .custom_check .checkmark:after {
 left: 9px;
@@ -188,3 +193,14 @@ margin: 2.032px;
     font-size: 16px;
     box-sizing: border-box;
 }
+
+.developer_info{
+    width: 400px;
+    height: 30px;
+    background-color: #a5a01e;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Developed by Rehayet Hossen Shakil 
+    https://www.linkedin.com/in/rehayet-hossen-shakil */

@@ -9,3 +9,6 @@ urlpatterns = [
 
     
 ]
+
+# Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil

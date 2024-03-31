@@ -1,5 +1,6 @@
 from django.shortcuts import render ,  HttpResponse , redirect
-
+# Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil
 def block(request):
 
     try:
@@ -40,7 +41,8 @@ def re(request):
 
         output_list = format_input(filtered_output)
         
-        
+#  Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil       
         
         formatted_content = '\n'.join(output_list)
         
@@ -71,11 +73,5 @@ def format_input(input_list):
     return output_list
 
 
-def alom(request):
-    input_alom = request.POST.get('input_alom')
-    int_value = int(input_alom)
-    con = {"cont": range(1, int_value + 1)}
-    return render(request, 'alom_2.html', con)
-
-def alom_html(request):
-    return render(request, 'alom_2.html')
+# Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil

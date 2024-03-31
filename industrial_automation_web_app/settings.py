@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'industrial_automation_web_app',
 ]
-
+# Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -51,7 +52,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'industrial_automation_web_app.urls'
-
+# Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil
 import os
 temp_dir = os.path.join(BASE_DIR, 'templates')
 static_dir = os.path.join(BASE_DIR, 'static')
@@ -122,7 +124,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [static_dir]
-
+# Developed by Rehayet Hossen Shakil 
+#     https://www.linkedin.com/in/rehayet-hossen-shakil
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
