@@ -12,10 +12,10 @@ def block(request):
          'positions': range(1, number_input+1),
          'total':number_input,
     }
-        return render(request, 'alom.html' , context)
+        return render(request, 'index.html' , context)
   
     except:
-        return render(request, 'alom.html')
+        return render(request, 'index.html')
 
  
 def re(request):
